@@ -1,0 +1,219 @@
+*, * ::before, * ::after {
+    box-sizing: border-box;
+}
+
+.cards {
+    width: 650px;
+    height: 700px;
+    background-color: #0d5825;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+.quote {
+    color: white;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+}
+
+q {
+    font-weight: bold;
+}
+
+q:before {
+    content: '\201C';
+}
+
+q:after {
+    content: '\201D';
+}
+
+cite {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.block {
+    position: relative;
+    top: 150px;
+}
+
+.block img {
+    width: 150px;
+    transition: 0.5s linear;
+}
+
+img:first-child {
+    transform: rotate(-25deg) translate(97px, 47px);
+}
+
+img:nth-child(2) {
+    transform: rotate(-10deg) translate(0px, 5px);
+}
+
+img:last-child {
+    transform: rotate(10deg) translate(-100px, 40px);
+}
+
+img:first-child:hover {
+    transform: rotate(-25deg) translate(97px, 27px);
+}
+
+img:nth-child(2):hover {
+    transform: rotate(-10deg) translate(0px, -15px);
+}
+
+img:last-child:hover {
+    transform: rotate(10deg) translate(-100px, 20px);
+}
+
+/* Задание 2 */
+
+.task2 {
+    margin: 10px 50px;
+}
+
+.red {
+    background-color: rgb(228, 107, 107);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 90px;
+}
+
+.purple {
+    background-color: rgb(176, 154, 226);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: -60px;
+    top: 50px;
+    z-index: 4;
+}
+
+.green {
+    background-color: rgb(25, 223, 157);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: -120px;
+}
+
+/* Task3 */
+
+.menu {
+    background-color: rgb(114, 110, 110);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    margin: 10px;
+    height: 400px;
+    transition: width 0.4s linear;
+}
+
+.menu:hover {
+    width: 225px;
+    padding: 10px;
+}
+
+.menu .name-menu {
+    display: block;
+    width: 150px;
+    position: absolute;
+    top: 220px;
+    left: -63px;
+    transform: rotate(90deg);
+}
+
+.menu:hover .name-menu {
+    display: none;
+}
+
+.menu .navigation {
+    margin: 10px;
+    padding: 10px;
+    display: none;
+}
+
+.menu:hover .navigation {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.menu li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: black solid 1px;
+    background-color: orange;
+    transform: rotate(50deg);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.4s linear;
+}
+
+.menu a:hover {
+    color: orange;
+}
+
+/* Task4 */
+
+.task4 {
+    width: 500px;
+    height: 500px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: square 4s infinite;
+}
+
+@keyframes square {
+    0% {
+        left: 0;
+        top: 0;
+        background-color: red;
+    }
+    25% {
+        left: 0;
+        top: 400px;
+        background-color: blue;
+    }
+    50% {
+        left: 400px;
+        top: 400px;
+        background-color: green;
+    }
+    75% {
+        left: 400px;
+        top: 0;
+        background-color: yellow;
+    }
+    100% {
+        left: 0;
+        top: 0;
+        background-color: red;
+    }
+}

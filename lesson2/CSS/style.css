@@ -1,0 +1,53 @@
+    blockquote p::before {
+        content: '\201C';
+    }
+
+    blockquote p::after {
+        content: '\201D';
+    }
+
+    blockquote {
+        background-color: #1df51d;
+    }
+
+    a[href^='https://'] {
+        color: red;
+    }
+
+    .list>li:last-child {
+        background-color: #57b9f9;
+    }
+
+    ul+p {
+        font-size: 26px;
+    }
+
+    .text-box h3:first-child {
+        color: pink;
+    }
+
+    #greycol {
+        color: gray;
+    }
+
+    .text-box div p {
+        color: red;
+    }
+
+    .text-box :nth-child(7) {
+        color: green;
+    }
+
+    .yellow {
+        color: yellow;
+    }
+
+    .bg-box {
+        width: 1000px;
+        height: 500px;
+        background-color: green;
+        background-image: url("https://img2.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg"), url("https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png"), url("https://www.freeiconspng.com/uploads/lamp-png-0.png"), url("https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru"), url("https://avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png");
+        background-repeat: no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;
+        background-position: center center, bottom, top, left, right;
+        background-size: 500px 300px, 200px 120px, 30px 50px, 20px 20px, 25px 25px;
+    }
